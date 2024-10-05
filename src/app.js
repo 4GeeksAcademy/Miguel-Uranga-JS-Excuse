@@ -18,12 +18,11 @@ window.onload = function() {
     "while I was praying"
   ];
   document.getElementById("excuse").innerHTML =
-    who[Math.floor(Math.random() * 3 + 1)] +
+    who[Math.floor(Math.random() * who.length)] +
     " " +
-    action[Math.floor(Math.random() * 3 + 1)] +
+    action[Math.floor(Math.random() * action.length)] +
     " " +
-    what[Math.floor(Math.random() * 3 + 1)] +
+    what[Math.floor(Math.random() * what.length)] +
     " " +
-    when[Math.floor(Math.random() * 3 + 1)];
-  console.log("Hello Rigo from the console!");
+    when[Math.floor(Math.random() * when.length)];
 };
